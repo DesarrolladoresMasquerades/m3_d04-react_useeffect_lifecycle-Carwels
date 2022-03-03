@@ -13,6 +13,8 @@ function IronbnbList() {
       setApartments(response.data);
       setFetching(false);
     });
+
+    return () => console.log("useEffect - cleanup")
   }, []);
 
   return (
